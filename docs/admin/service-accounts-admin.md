@@ -71,9 +71,7 @@ option. The public key will be used to verify the tokens during authentication.
 
 #### To create additional API tokens
 
-A controller loop ensures a secret with an API token exists for each service
-account. To create additional API tokens for a service account, create a secret
-of type `ServiceAccountToken` with an annotation referencing the service
+A controller loop ensures a secret with an API token exists for each service account. To create additional API tokens for a service account, create a secret of type `ServiceAccountToken` with an annotation referencing the service
 account, and the controller will update it with a generated token:
 
 secret.json:
